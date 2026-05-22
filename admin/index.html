@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RBI Admin | Calendario</title>
+  <link rel="icon" href="../assets/img/rbi-icon.webp">
+  <style>
+    :root{--bg:#060607;--card:#111216;--line:rgba(255,255,255,.14);--red:#e30613;--red2:#af000a;--green:#25D366;--text:#f6f2ec;--muted:#c8c0b5;--shadow:0 28px 90px rgba(0,0,0,.38);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 8% 12%,rgba(227,6,19,.24),transparent 34%),radial-gradient(circle at 90% 8%,rgba(255,255,255,.08),transparent 30%),var(--bg);color:var(--text);min-height:100vh}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 28px));margin:auto;padding:28px 0 56px}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:48px;height:48px;border-radius:14px}.brand b{font-size:21px}.pill{border:1px solid var(--line);background:rgba(255,255,255,.08);border-radius:999px;padding:9px 12px;color:#e8e0d4;font-weight:900}.hero{border:1px solid var(--line);border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.105),rgba(255,255,255,.045));box-shadow:var(--shadow);padding:26px;margin-bottom:18px}.hero h1{font-size:clamp(32px,5vw,64px);line-height:.92;margin:10px 0;letter-spacing:-.06em}.hero p{color:var(--muted);max-width:900px;font-size:16px;line-height:1.55}.login,.panel,.simple-save,.advanced{border:1px solid var(--line);border-radius:28px;background:rgba(0,0,0,.34);padding:20px;box-shadow:var(--shadow);margin-top:16px}label{display:block;color:#e8e0d4;font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}input,select,textarea{width:100%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;border-radius:16px;padding:12px;font:inherit;outline:none}select option{background:#111;color:#fff}textarea{min-height:72px;resize:vertical}.btn{border:0;border-radius:999px;background:linear-gradient(135deg,var(--red),#ff2f3d);color:#fff;font-weight:1000;padding:13px 16px;cursor:pointer;box-shadow:0 16px 42px rgba(227,6,19,.30)}.btn.green{background:var(--green);box-shadow:0 16px 42px rgba(37,211,102,.25)}.btn.ghost{background:rgba(255,255,255,.08);border:1px solid var(--line);box-shadow:none}.btn.danger{color:#ffd8d8}.row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin:12px 0}.course-card{border:1px solid rgba(255,255,255,.13);border-radius:24px;padding:16px;margin:14px 0;background:rgba(255,255,255,.055)}.course-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}.course-head strong{font-size:20px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.status{margin-top:12px;color:#d9d2c8;font-weight:800}.hidden{display:none!important}.hint{color:#bfb7aa;font-size:13px;line-height:1.45;margin-top:8px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}.note{border-left:4px solid var(--green);padding:12px 14px;background:rgba(37,211,102,.08);border-radius:14px;color:#f6ecd7;margin:14px 0}.technical-hidden{display:none!important}.simple-save{background:linear-gradient(180deg,rgba(37,211,102,.10),rgba(255,255,255,.04))}.save-row{display:grid;grid-template-columns:1fr auto auto auto;gap:10px;align-items:end}.advanced summary{cursor:pointer;font-weight:900;color:#ddd}.advanced{opacity:.88}@media(max-width:800px){.top{display:block}.row,.grid2,.grid4,.save-row{grid-template-columns:1fr}.course-head{display:block}.actions .btn,.save-row .btn{width:100%}.hero,.login,.panel,.advanced,.simple-save{border-radius:22px;padding:16px}}
+  </style>
+
+<style id="v21-production-fixes">
+/* RBI V21: ajustes de producción, mobile y calendario */
+@media (max-width:620px){
+  .hero .stage{min-height:590px!important;}
+  .hero .stage .person{top:0!important;bottom:auto!important;right:0!important;width:100%!important;height:62%!important;object-fit:cover!important;object-position:center top!important;transform:none!important;}
+  .hero .stage-card{left:14px!important;right:14px!important;bottom:14px!important;padding:14px!important;border-radius:22px!important;}
+  .hero .stage-card strong{font-size:19px!important;display:block;margin-bottom:6px!important;}
+  .hero .stage-card p{font-size:13px!important;line-height:1.45!important;margin:0!important;}
+  .hero .signature-float{width:128px!important;margin-top:6px!important;}
+  .grid.three .card{text-align:center!important;padding:24px 18px!important;}
+  .grid.three .card .num{margin-inline:auto!important;}
+  .grid.three .card h3,.grid.three .card p{margin-left:auto!important;margin-right:auto!important;text-align:center!important;}
+  .grid.three .card p{max-width:32ch!important;}
+  #material-historico-rbi{padding-top:64px!important;}
+  #material-historico-rbi .section-head.center{margin-bottom:18px!important;}
+  #material-historico-rbi .section-head.center h2{font-size:clamp(28px,8vw,38px)!important;line-height:1.02!important;}
+  #material-historico-rbi .marquee{margin-top:18px!important;overflow-x:auto!important;overflow-y:hidden!important;mask-image:none!important;-webkit-mask-image:none!important;scroll-snap-type:x mandatory!important;padding:4px 0 8px!important;}
+  #material-historico-rbi .marquee-track{animation:none!important;transform:none!important;width:max-content!important;padding-right:12px!important;}
+  #material-historico-rbi .marquee img{height:170px!important;min-width:170px!important;scroll-snap-align:start!important;}
+  #material-historico-rbi .marquee::-webkit-scrollbar{display:none;}
+}
+.cal-top{gap:18px;align-items:center;}
+.calendar-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:14px!important;}
+.calendar-grid .schedule-card{position:relative!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important;min-height:315px!important;padding:0!important;overflow:hidden!important;border-radius:24px!important;background:#121212!important;box-shadow:0 22px 54px rgba(0,0,0,.35)!important;}
+.calendar-grid .schedule-card:before{content:"";position:absolute;inset:0;background-size:cover;background-position:center top;opacity:.82;transform:scale(1.01);}
+.calendar-grid .schedule-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.34) 42%,rgba(0,0,0,.94) 100%);}
+.calendar-grid .schedule-card:nth-child(1):before{background-image:url('../assets/img/restaurante-rentable-cover.webp')!important;}
+.calendar-grid .schedule-card:nth-child(2):before{background-image:url('../assets/img/clientes-para-siempre-cover.webp')!important;}
+.calendar-grid .schedule-card:nth-child(3):before{background-image:url('../assets/img/cafeteria-perfecta-cover.webp')!important;}
+.calendar-grid .schedule-card:nth-child(4):before{background-image:url('../assets/img/liderazgo-gastronomico-cover.webp')!important;}
+.calendar-grid .schedule-card:nth-child(5):before{background-image:url('../assets/img/mesero-5-estrellas-cover.webp')!important;}
+.calendar-grid .schedule-card>div:first-child{position:relative;z-index:2;padding:14px!important;}
+.calendar-grid .schedule-card .eyebrow{font-size:9px!important;letter-spacing:.14em!important;margin-bottom:5px!important;}
+.calendar-grid .schedule-card strong{font-size:18px!important;line-height:1.02!important;margin-bottom:8px!important;}
+.calendar-grid .schedule-card p{font-size:11px!important;line-height:1.42!important;margin-bottom:10px!important;color:#f2eee7!important;}
+.calendar-grid .schedule-card .actions{gap:7px!important;margin-top:0!important;}
+.calendar-grid .schedule-card .btn.small{min-height:34px!important;padding:8px 10px!important;font-size:10px!important;}
+.calendar-grid .date-pill{position:absolute!important;top:10px!important;right:10px!important;z-index:3!important;min-width:auto!important;padding:8px 9px!important;border-radius:14px!important;background:rgba(0,0,0,.62)!important;color:#fff!important;border-color:rgba(255,255,255,.18)!important;font-size:10px!important;line-height:1.05!important;}
+@media(max-width:1100px){.calendar-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;}}
+@media(max-width:720px){
+  .calendar-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;}
+  .calendar-grid .schedule-card{min-height:245px!important;border-radius:20px!important;}
+  .calendar-grid .schedule-card>div:first-child{padding:11px!important;}
+  .calendar-grid .schedule-card strong{font-size:15px!important;}
+  .calendar-grid .schedule-card p{display:none!important;}
+  .calendar-grid .schedule-card .btn.small{min-height:30px!important;padding:7px 8px!important;font-size:9px!important;}
+}
+@media(max-width:420px){.calendar-grid .schedule-card{min-height:225px!important}.calendar-grid .schedule-card strong{font-size:14px!important}}
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="top"><div class="brand"><img src="../assets/img/rbi-icon.webp" alt="RBI"><div><b>RBI Admin</b><div class="hint">Panel privado para calendario académico</div></div></div><a class="pill" href="../calendario/">Ver calendario público</a></div>
+    <section class="hero"><span class="pill">Superadministrador</span><h1>Editar fechas de los 5 cursos RBI.</h1><p>Edita fechas, horarios, ciudad, estado y enlaces. Luego descarga el archivo actualizado y súbelo en GitHub reemplazando <b>assets/data/rbi-calendar.json</b>. Netlify publicará el cambio automáticamente.</p></section>
+    <section id="loginBox" class="login"><label>Clave de administrador</label><input id="adminKey" type="password" placeholder="Ingrese clave"><div class="actions"><button class="btn" id="enterBtn" type="button">Entrar al panel</button></div><div class="hint">Clave inicial: RBI-ADMIN-2026.</div></section>
+    <section id="adminPanel" class="panel hidden">
+      <div class="course-head"><div><span class="pill">Eventos</span><h2 style="margin:10px 0 4px">Calendario editable</h2><div class="hint">Edita curso, fecha, hora, estado, ciudad, modalidad, links y visibilidad. Si dejas fecha vacía, aparece como “por confirmar”.</div></div><button class="btn ghost" id="addRowBtn" type="button">+ Agregar otra fecha</button></div>
+      <div class="simple-save">
+        <div class="note"><b>Modo simple:</b> carga el calendario actual, edita los cursos y descarga el archivo actualizado para reemplazarlo en GitHub.</div>
+        <div class="save-row">
+          <div style="display:none"><label>Token privado de guardado</label><input id="githubToken" type="password"></div>
+          <button class="btn ghost" id="loadLocalBtn" type="button">Cargar calendario actual</button>
+          <button class="btn green" id="downloadBtn" type="button">Descargar calendario actualizado</button>
+          
+        </div>
+        <div class="hint">Después de subir el archivo actualizado a GitHub, Netlify publicará el cambio automáticamente. Si no aparece de inmediato, espera unos segundos y recarga.</div>
+      </div>
+      <div id="eventsEditor"></div>
+      <div class="actions"><button class="btn ghost" id="resetBtn" type="button">Restaurar 5 cursos base</button></div>
+      <div id="saveStatus" class="status"></div>
+    </section>
+  </div>
+  <script src="../assets/js/rbi-admin-calendar.js"></script>
+</body>
+</html>

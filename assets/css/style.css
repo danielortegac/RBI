@@ -533,3 +533,110 @@
   .bot-launch{right:14px!important;bottom:74px!important;font-size:12px!important;padding:10px 13px!important;}
   .chatbot{right:14px!important;bottom:128px!important;}
 }
+
+
+/* === RBI V17 visual polish === */
+:root{
+  --rbi-red:#e30613;
+  --rbi-red-deep:#b6000b;
+  --rbi-black:#090909;
+  --rbi-white:#ffffff;
+}
+.brand img{width:190px;max-width:190px;filter:drop-shadow(0 0 24px rgba(255,255,255,.18))!important}
+.brand-mark{width:56px;height:56px;border-radius:16px;box-shadow:0 18px 42px rgba(227,6,19,.30)!important}
+.hero .display .stroke{
+  color:#fff!important;
+  background:none!important;
+  -webkit-text-stroke:0!important;
+  text-shadow:0 8px 30px rgba(227,6,19,.20),0 6px 18px rgba(0,0,0,.55)!important;
+}
+.hero .display .hot{
+  background:linear-gradient(90deg,#ffffff 0%,#ffe4e6 24%,#ff555f 68%,#e30613 100%)!important;
+  -webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;
+}
+.btn,
+.nav-cta,
+.quick button,
+.bot-input button{
+  background:linear-gradient(135deg,var(--rbi-red),#ff2f3c)!important;
+  color:#fff!important;
+  border-color:rgba(255,255,255,.14)!important;
+  box-shadow:0 18px 44px rgba(227,6,19,.28)!important;
+}
+.btn:hover,.nav-cta:hover,.quick button:hover,.bot-input button:hover{
+  background:linear-gradient(135deg,var(--rbi-red-deep),var(--rbi-red))!important;
+  box-shadow:0 24px 54px rgba(227,6,19,.38)!important;
+}
+.btn.ghost{
+  background:rgba(227,6,19,.10)!important;
+  border-color:rgba(227,6,19,.35)!important;
+  color:#fff!important;
+}
+.quick a.whats,
+.wa-float{
+  background:#25D366!important;
+  box-shadow:0 18px 44px rgba(37,211,102,.32)!important;
+}
+.rbi-social-link .ico{color:var(--rbi-red)}
+/* Support / proof cards */
+.proof-grid,.support-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.proof-card,.support-card,.material-card{
+  position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+  box-shadow:0 18px 50px rgba(0,0,0,.26);
+}
+.proof-card img,.support-card img,.material-card img,.card img{
+  display:block;width:100%;height:230px;object-fit:cover;object-position:center top;
+}
+.proof-card .content,.support-card .content,.material-card .content{
+  padding:14px 16px;
+}
+/* Calendar cards redesign */
+.calendar-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px!important}
+.schedule-card{
+  position:relative;display:flex!important;flex-direction:column;justify-content:flex-end;
+  min-height:420px;border-radius:30px;overflow:hidden;padding:0!important;background:#111!important;
+  border:1px solid rgba(255,255,255,.14)!important;box-shadow:0 24px 60px rgba(0,0,0,.36)!important;
+}
+.schedule-card::before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;opacity:.92;transform:scale(1.02)}
+.schedule-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.06) 5%,rgba(0,0,0,.36) 40%,rgba(0,0,0,.92) 100%)}
+.schedule-card > div:first-child{position:relative;z-index:2;padding:18px}
+.schedule-card .eyebrow{font-size:10px;letter-spacing:.16em;margin-bottom:6px}
+.schedule-card strong{display:block;font-size:24px;line-height:.98;margin-bottom:8px}
+.schedule-card p{font-size:13px;line-height:1.45;color:#f0e9e1;margin-bottom:14px}
+.schedule-card .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:0}
+.schedule-card .btn.small{min-height:40px;padding:10px 14px;font-size:12px}
+.date-pill{position:absolute;top:14px;right:14px;z-index:2;min-width:auto;padding:10px 12px;border-radius:16px;background:rgba(0,0,0,.58)!important;color:#fff!important;border-color:rgba(255,255,255,.18)!important;font-size:12px;line-height:1.1}
+.schedule-card:nth-child(1)::before{background-image:url('../assets/img/restaurante-rentable-cover.webp')}
+.schedule-card:nth-child(2)::before{background-image:url('../assets/img/clientes-para-siempre-cover.webp')}
+.schedule-card:nth-child(3)::before{background-image:url('../assets/img/cafeteria-perfecta-cover.webp')}
+.schedule-card:nth-child(4)::before{background-image:url('../assets/img/liderazgo-gastronomico-cover.webp')}
+.schedule-card:nth-child(5)::before{background-image:url('../assets/img/mesero-5-estrellas-cover.webp')}
+@media(max-width:1100px){
+  .calendar-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:920px){
+  .brand img{width:136px!important;max-width:136px!important}
+  .brand-mark{width:40px!important;height:40px!important;min-width:40px!important}
+  .schedule-card strong{font-size:20px}
+}
+@media(max-width:720px){
+  .calendar-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .schedule-card{min-height:330px!important;border-radius:22px!important}
+  .schedule-card > div:first-child{padding:12px!important}
+  .schedule-card strong{font-size:18px!important}
+  .schedule-card p{display:none!important}
+  .date-pill{top:10px;right:10px;padding:8px 9px;font-size:11px}
+  .proof-grid,.support-grid,.grid.three,.grid.two,.problem-grid,.result-grid,.include-grid,.authority-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:620px){
+  .site-header{padding:8px 8px 10px!important}
+  .hero-grid{gap:26px!important}
+  .stage{min-height:500px!important}
+  .stage .person{width:100%!important;height:100%!important;right:-8px!important;object-position:center 18%!important}
+  .stage-card{left:12px!important;right:12px!important;bottom:12px!important;padding:14px!important}
+  .main-nav{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .nav-link{font-size:9px!important;padding:7px 4px!important}
+  .nav-cta{min-width:92px!important;max-width:100px!important}
+  .proof-card img,.support-card img,.material-card img,.card img{height:160px!important}
+}
