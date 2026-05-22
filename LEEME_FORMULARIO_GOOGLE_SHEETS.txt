@@ -1,0 +1,22 @@
+RBI - Formulario conectado a Google Sheets
+
+Endpoint Apps Script:
+https://script.google.com/macros/s/AKfycbwrHwt4uicPUYyZgj2h4NaJpLLsW-qVxFIeRW-0tbCsJb_WM29DOY-xy8MjuEfliE_pJA/exec
+
+Qué se configuró:
+- La página contacto.html incluye un formulario real de leads.
+- Al enviar, guarda en el Google Sheets mediante Google Apps Script.
+- El envío usa fetch con mode no-cors para funcionar desde GitHub Pages, Netlify o hosting estático.
+- Los visitantes no ven permisos de Google ni necesitan iniciar sesión.
+
+Campos enviados:
+Fecha automática en Apps Script, Nombre, WhatsApp, Email, País, Ciudad, Curso, Tipo de solicitud, Mensaje, Página de origen, URL de origen y UTMs.
+
+Prueba rápida:
+1. Abrir contacto.html desde un servidor/hosting.
+2. Llenar Nombre, WhatsApp y Curso.
+3. Enviar solicitud.
+4. Revisar que aparezca una nueva fila en la pestaña Leads del Google Sheets.
+
+Importante:
+Si cambias la implementación de Apps Script, reemplaza la URL /exec en window.RBI_LEADS_ENDPOINT dentro de los HTML o en assets/js/main.js.

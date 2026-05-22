@@ -1,0 +1,10 @@
+RBI V9 - Ajustes finales solicitados
+
+- Main: métricas 5 / 360° / B2B en una sola fila en celular.
+- Main: la tarjeta 03 Resultado empresarial ocupa toda la fila en vista celular.
+- Cards responsivas en celular: 2 por fila cuando aplica.
+- Footer actualizado en todas las páginas: Sitio web desarrollado y diseñado por Goatify.
+- SEO reforzado en todas las páginas: titles, descriptions, keywords, robots, canonical, Open Graph, Twitter card y JSON-LD básico.
+- Flecha inferior derecha para subir al inicio cuando el usuario baja la página.
+- Título del main reforzado: la palabra “para” ya no aparece transparente, queda con impacto visual.
+- Se mantiene la conexión a Google Sheets y el resto del diseño anterior.

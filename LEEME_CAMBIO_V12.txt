@@ -1,0 +1,1 @@
+V12: Ajuste quirúrgico solicitado. Menú móvil en dos filas sin scroll horizontal, botón WhatsApp en primera fila junto al logo solo en celular/tablet, y botones flotantes de WhatsApp/Asesor RBI bajados para que no queden encima del hero. No se cambiaron secciones ni contenido restante.

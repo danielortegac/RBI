@@ -1,0 +1,12 @@
+V7 - Ajuste solicitado
+
+Cambio realizado:
+- Se rediseñó únicamente la sección del main: "Los 5 cursos RBI".
+- Se cambió de 5 cards estrechas en una sola fila a un diseño tipo bento premium.
+- Las fotos quedan más visibles.
+- El texto queda dentro de una tarjeta glass más limpia y legible.
+- No se tocó el resto del sitio ni la conexión con Google Sheets.
+
+Archivo principal:
+- index.html
+- ABRIR_AQUI_RBI.html
