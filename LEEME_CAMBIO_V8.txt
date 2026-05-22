@@ -1,9 +1,0 @@
-RBI V8
-
-Cambio aplicado:
-- Se rediseñó únicamente la sección del main "Los 5 cursos RBI".
-- Las 5 cards vuelven a salir en una sola fila en desktop.
-- Las fotos se muestran completas con object-fit: contain, sin recorte.
-- Se quitó el cuadro negro de texto; ahora el texto va directo sobre la foto con sombra y opacidad general.
-- En vista celular, las cards principales se fuerzan a 2 por fila para mejor responsive.
-- Se mantiene la conexión a Google Sheets de la V5/V6/V7.

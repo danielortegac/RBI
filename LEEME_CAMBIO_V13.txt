@@ -1,1 +1,0 @@
-V13: corrección real móvil sin tocar el resto: menú en 2 filas sin scroll, WhatsApp arriba junto al logo en celular, burbujas flotantes más abajo y texto "para" del título principal sólido/visible.

@@ -1,1 +1,0 @@
-V14: fix real del menú móvil. WhatsApp del menú queda arriba junto al logo; el nav queda en 2 filas reales sin scroll; flotantes bajados; título principal corregido.
