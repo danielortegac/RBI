@@ -640,3 +640,19 @@
   .nav-cta{min-width:92px!important;max-width:100px!important}
   .proof-card img,.support-card img,.material-card img,.card img{height:160px!important}
 }
+
+
+/* V28: centrar solo la card Resultado empresarial en móvil */
+@media (max-width: 720px){
+  #promesa-rbi .promise-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    justify-items:stretch!important;
+  }
+  #promesa-rbi .promise-grid .card:nth-child(3){
+    grid-column:1 / -1!important;
+    width:min(290px,100%)!important;
+    justify-self:center!important;
+    margin-inline:auto!important;
+    text-align:center!important;
+  }
+}

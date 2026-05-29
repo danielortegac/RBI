@@ -117,7 +117,7 @@
     }
     live.innerHTML = visible.map(e=>{
       const d=fmtDay(e.fecha); const status=statusClass(e.estado);
-      const link = e.linkWhatsapp || `https://wa.me/526141964438?text=${encodeURIComponent('Hola, quiero información sobre '+(e.curso||'un curso de RBI')+' para la fecha '+(e.fecha||'por confirmar'))}`;
+      const link = e.linkWhatsapp || `https://wa.me/525555020802?text=${encodeURIComponent('Hola, quiero información sobre '+(e.curso||'un curso de RBI')+' para la fecha '+(e.fecha||'por confirmar'))}`;
       const href = e.linkPago || link;
       return `<a class="agenda-item" href="${href}" target="_blank" rel="noopener"><div class="agenda-date"><small>${d.mon}</small><b>${d.day}</b></div><div class="agenda-copy"><strong>${e.curso||'Curso RBI'}</strong><p>${[e.hora,e.ciudad,e.modalidad,e.notas].filter(Boolean).join(' · ') || 'Información disponible por WhatsApp.'}</p><span class="event-status ${status}">${e.estado||'Próximo'}</span></div></a>`;
     }).join('');
