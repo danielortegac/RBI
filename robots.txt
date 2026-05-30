@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
-Sitemap: https://www.rbi.com.mx/sitemap.xml
+Sitemap: https://www.rbi-restaurantsbusinessinstitute.com.mx/sitemap.xml

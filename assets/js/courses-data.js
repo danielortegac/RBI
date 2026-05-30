@@ -234,8 +234,8 @@ window.RBI_CONTACT = {
   "phone_display": "(55) 5502 0802",
   "phone2_display": "(55) 5502 0802",
   "phone_wa": "525555020802",
-  "email": "info@rbi.com.mx",
+  "email": "info@www.rbi-restaurantsbusinessinstitute.com.mx",
   "email2": "alonso.mendezn@gmail.com",
-  "web": "www.rbi.com.mx",
+  "web": "www.rbi-restaurantsbusinessinstitute.com.mx",
   "facebook": "@RBI"
 };
