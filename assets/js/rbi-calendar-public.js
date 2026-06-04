@@ -6,7 +6,7 @@
   if(!live && !grid) return;
 
   const fallbackEvents = [
-    {id:'restaurante-rentable',curso:'Restaurante Rentable',fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Por confirmar',color:'red',visible:true,notas:'Entrenamiento intensivo para sistematizar, vender más y hacer rentable el restaurante.'},
+    {id:'restaurante-rentable',curso:'Cómo dirigir y hacer rentable tu restaurante',fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Por confirmar',color:'red',visible:true,notas:'Entrenamiento intensivo para sistematizar, vender más y hacer rentable el restaurante.'},
     {id:'clientes-para-siempre',curso:'Clientes para Siempre',fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Por confirmar',color:'teal',visible:true,notas:'Servicio, lealtad y experiencia para convertir clientes en fans.'},
     {id:'cafeteria-perfecta',curso:'La Cafetería Perfecta',fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Por confirmar',color:'green',visible:true,notas:'Barismo, apertura de cafetería, recetas, costos y métodos.'},
     {id:'liderazgo-gastronomico',curso:'Liderazgo Gastronómico',fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Por confirmar',color:'purple',visible:true,notas:'Manager, gerente, capitán, líder, jefe o supervisor.'},
@@ -17,7 +17,7 @@
     const t=String(s).toLowerCase();
     if(t.includes('agot')) return 'agotado';
     if(t.includes('limit')) return 'limitado';
-    if(t.includes('activo')) return 'activo';
+    if(t.includes('activo') || t.includes('abierto')) return 'activo';
     if(t.includes('final')) return 'finalizado';
     if(t.includes('confirm')) return 'confirmar';
     return 'proximo';
