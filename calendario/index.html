@@ -115,6 +115,38 @@ html,body{min-height:100%;}body{background:#07070a!important;color:#fff!importan
   .schedule-card.pro .date-pill.pro b{font-size:20px}
 }
 
+
+/* === RBI V48: calendario cards limpias sin fecha en esquina === */
+#calendario-programas .section-head.center,
+section:has(.calendar-grid) .section-head.center{
+  text-align:center!important;
+}
+#calendario-programas .section-head.center p,
+section:has(.calendar-grid) .section-head.center p{
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+  max-width:760px!important;
+}
+.calendar-grid .schedule-card.pro{
+  grid-template-columns:1fr!important;
+  align-items:stretch!important;
+}
+.calendar-grid .schedule-card.pro .actions{
+  justify-content:flex-start!important;
+}
+@media(max-width:720px){
+  .calendar-grid .schedule-card.pro .actions{
+    justify-content:center!important;
+  }
+  .calendar-grid .schedule-card.pro{
+    text-align:center!important;
+  }
+  .calendar-grid .schedule-card.pro .calendar-course-mini{
+    justify-content:center!important;
+  }
+}
+
 </style>
 
 <style id="rbi-v8-main-courses-clean-responsive">
@@ -1254,18 +1286,18 @@ html,body{min-height:100%;}body{background:#07070a!important;color:#fff!importan
 <script src="../assets/js/rbi-calendar-public.js"></script>
 
 <section class="section soft">
-  <div class="container section-head center reveal"><span class="eyebrow">Cursos disponibles</span><h2>Explora programas y solicita próxima fecha</h2><p>Cada tarjeta lleva al programa completo o abre WhatsApp con el mensaje exacto para pedir cupo, horario o capacitación privada.</p></div>
+  <div class="container section-head center reveal"><span class="eyebrow">Cursos disponibles</span><h2>Explora programas y solicita próxima fecha</h2><p>Elige el programa que mejor se ajuste a tu operación y solicita cupo, horario o una capacitación privada para tu equipo gastronómico.</p></div>
   <div class="container calendar-grid">
     <div class="schedule-card pro reveal">
-      <div><span class="eyebrow">Cómo dirigir y hacer rentable tu restaurante</span><strong>Operación, ventas y rentabilidad</strong><p>Entrenamiento intensivo para ordenar operación, productividad, ventas, controles y rentabilidad.</p><div class="calendar-course-mini"><span>06 de julio de 2026</span><span>8:00 am a 6:00 pm</span><span>CDMX</span><span>Presencial</span><span>$2,950 MXN</span></div><div class="actions"><a class="btn small" href="../restaurante-rentable/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20C%C3%B3mo%20dirigir%20y%20hacer%20rentable%20tu%20restaurante%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div><div class="date-pill pro"><b>06</b><span>jul 2026</span></div></div>
+      <div><span class="eyebrow">Cómo dirigir y hacer rentable tu restaurante</span><strong>Operación, ventas y rentabilidad</strong><p>Entrenamiento intensivo para ordenar operación, productividad, ventas, controles y rentabilidad.</p><div class="calendar-course-mini"><span>06 de julio de 2026</span><span>8:00 am a 6:00 pm</span><span>CDMX</span><span>Presencial</span><span>$2,950 MXN</span></div><div class="actions"><a class="btn small" href="../restaurante-rentable/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20C%C3%B3mo%20dirigir%20y%20hacer%20rentable%20tu%20restaurante%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div></div>
     <div class="schedule-card pro reveal">
-      <div><span class="eyebrow">Clientes para Siempre</span><strong>Servicio, lealtad y experiencia</strong><p>Para mejorar servicio, experiencia, recompra, recomendación y fidelización.</p><div class="calendar-course-mini"><span>04 de agosto de 2026</span><span>8:00 am a 6:00 pm</span><span>CDMX</span><span>Presencial</span><span>$2,500 MXN</span></div><div class="actions"><a class="btn small" href="../clientes-para-siempre/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20Clientes%20para%20Siempre%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div><div class="date-pill pro"><b>04</b><span>ago 2026</span></div></div>
+      <div><span class="eyebrow">Clientes para Siempre</span><strong>Servicio, lealtad y experiencia</strong><p>Para mejorar servicio, experiencia, recompra, recomendación y fidelización.</p><div class="calendar-course-mini"><span>04 de agosto de 2026</span><span>8:00 am a 6:00 pm</span><span>CDMX</span><span>Presencial</span><span>$2,500 MXN</span></div><div class="actions"><a class="btn small" href="../clientes-para-siempre/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20Clientes%20para%20Siempre%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div></div>
     <div class="schedule-card pro reveal no-date">
-      <div><span class="eyebrow">La Cafetería Perfecta</span><strong>Barismo, costos y cafetería rentable</strong><p>Para emprendedores, baristas, dueños de cafetería y personas que desean abrir o mejorar una cafetería.</p><div class="calendar-course-mini"><span>Fecha privada</span><span>Sede y horario a coordinar</span><span>Capacitación para equipos</span></div><div class="actions"><a class="btn small" href="../cafeteria-perfecta/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20consultar%20pr%C3%B3xima%20fecha%20del%20curso%20La%20Cafeter%C3%ADa%20Perfecta%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div><div class="date-pill pro"><b>RBI</b><span>privado</span></div></div>
+      <div><span class="eyebrow">La Cafetería Perfecta</span><strong>Barismo, costos y cafetería rentable</strong><p>Para emprendedores, baristas, dueños de cafetería y personas que desean abrir o mejorar una cafetería.</p><div class="calendar-course-mini"><span>Fecha privada</span><span>Sede y horario a coordinar</span><span>Capacitación para equipos</span></div><div class="actions"><a class="btn small" href="../cafeteria-perfecta/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20consultar%20pr%C3%B3xima%20fecha%20del%20curso%20La%20Cafeter%C3%ADa%20Perfecta%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div></div>
     <div class="schedule-card pro reveal">
-      <div><span class="eyebrow">Manager, Gerente, Capitán, Líder, Jefe o Supervisor</span><strong>Liderazgo gastronómico</strong><p>Para gerentes, capitanes, supervisores y líderes operativos que necesitan ejecutar con método.</p><div class="calendar-course-mini"><span>07 de julio de 2026</span><span>8:00 am a 1:00 pm</span><span>CDMX</span><span>Presencial</span><span>$1,750 MXN</span></div><div class="actions"><a class="btn small" href="../liderazgo-gastronomico/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20Manager%2C%20Gerente%2C%20Capit%C3%A1n%2C%20L%C3%ADder%2C%20Jefe%20o%20Supervisor%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div><div class="date-pill pro"><b>07</b><span>jul 2026</span></div></div>
+      <div><span class="eyebrow">Manager, Gerente, Capitán, Líder, Jefe o Supervisor</span><strong>Liderazgo gastronómico</strong><p>Para gerentes, capitanes, supervisores y líderes operativos que necesitan ejecutar con método.</p><div class="calendar-course-mini"><span>07 de julio de 2026</span><span>8:00 am a 1:00 pm</span><span>CDMX</span><span>Presencial</span><span>$1,750 MXN</span></div><div class="actions"><a class="btn small" href="../liderazgo-gastronomico/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20Manager%2C%20Gerente%2C%20Capit%C3%A1n%2C%20L%C3%ADder%2C%20Jefe%20o%20Supervisor%20de%20RBI.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div></div>
     <div class="schedule-card pro reveal no-date">
-      <div><span class="eyebrow">Mesero de 5 Estrellas</span><strong>Servicio que vende</strong><p>Curso presencial con tu equipo en tu propio restaurante para convertir servicio en experiencia y ventas.</p><div class="calendar-course-mini"><span>Fecha privada</span><span>Sede y horario a coordinar</span><span>Capacitación para equipos</span></div><div class="actions"><a class="btn small" href="../mesero-5-estrellas/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20consultar%20pr%C3%B3xima%20fecha%20del%20curso%20Mesero%20de%205%20Estrellas%20de%20RBI%20para%20mi%20equipo.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div><div class="date-pill pro"><b>RBI</b><span>privado</span></div></div>
+      <div><span class="eyebrow">Mesero de 5 Estrellas</span><strong>Servicio que vende</strong><p>Curso presencial con tu equipo en tu propio restaurante para convertir servicio en experiencia y ventas.</p><div class="calendar-course-mini"><span>Fecha privada</span><span>Sede y horario a coordinar</span><span>Capacitación para equipos</span></div><div class="actions"><a class="btn small" href="../mesero-5-estrellas/">Ver curso</a><a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/525555020802?text=Hola%2C%20quiero%20consultar%20pr%C3%B3xima%20fecha%20del%20curso%20Mesero%20de%205%20Estrellas%20de%20RBI%20para%20mi%20equipo.%20Quiero%20consultar%20fechas%20disponibles%20y%20cupo.">Consultar fecha</a></div></div></div>
   </div>
 </section>
 <div class="container private-panel reveal">
