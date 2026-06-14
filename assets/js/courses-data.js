@@ -233,9 +233,10 @@ window.RBI_COURSES = [
 window.RBI_CONTACT = {
   "phone_display": "(55) 5502 0802",
   "phone2_display": "(55) 5502 0802",
-  "phone_wa": "525555020802",
+  "phone_wa": "526141964438",
   "email": "info@rbi-restaurantsbusinessinstitute.com.mx",
   "email2": "alonso.mendezn@gmail.com",
   "web": "www.rbi-restaurantsbusinessinstitute.com.mx",
-  "facebook": "@RBI"
+  "facebook": "https://www.facebook.com/share/1GvBeSBNTV/?mibextid=wwXIfr",
+  "instagram": "https://www.instagram.com/restaurantes.rentables.mx/"
 };

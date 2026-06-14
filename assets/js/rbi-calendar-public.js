@@ -194,7 +194,7 @@
     }
     live.innerHTML = dated.map(e=>{
       const d=fmtDay(e.fecha); const status=statusClass(e.estado);
-      const link = e.linkWhatsapp || `https://wa.me/525555020802?text=${encodeURIComponent('Hola, quiero información sobre '+(e.curso||'un curso de RBI')+' para la fecha '+(e.fecha||'a coordinar'))}`;
+      const link = e.linkWhatsapp || `https://wa.me/526141964438?text=${encodeURIComponent('Hola, quiero información sobre '+(e.curso||'un curso de RBI')+' para la fecha '+(e.fecha||'a coordinar'))}`;
       const href = e.linkPago || link;
       const price = [e.inversion, e.descuento20 ? '20% '+e.descuento20 : '', e.descuento30 ? '30% '+e.descuento30 : ''].filter(Boolean).join(' · ');
       const text = [e.hora,e.ciudad,e.modalidad,price || e.notas].filter(Boolean).join(' · ');

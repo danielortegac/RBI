@@ -8,7 +8,7 @@
   };
   const COURSES = ['Restaurante Rentable','Clientes para Siempre','La Cafetería Perfecta','Liderazgo Gastronómico','Mesero de 5 Estrellas'];
   const COLORS = ['red','teal','green','purple','gold','orange','gray'];
-  const DEFAULTS = COURSES.map((curso,i)=>({id:curso.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''),curso,fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Solicitar fecha',color:COLORS[i]||'gold',linkWhatsapp:`https://wa.me/525555020802?text=${encodeURIComponent('Hola, quiero información sobre '+curso+' RBI.')}`,linkPago:'',visible:true,notas:''}));
+  const DEFAULTS = COURSES.map((curso,i)=>({id:curso.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''),curso,fecha:'',hora:'',ciudad:'Chihuahua',modalidad:'Presencial',estado:'Solicitar fecha',color:COLORS[i]||'gold',linkWhatsapp:`https://wa.me/526141964438?text=${encodeURIComponent('Hola, quiero información sobre '+curso+' RBI.')}`,linkPago:'',visible:true,notas:''}));
   const $ = s => document.querySelector(s);
   let events = [];
   let currentSha = null;
