@@ -610,7 +610,7 @@
 .schedule-card:nth-child(1)::before{background-image:url('../assets/img/restaurante-rentable-cover.webp')}
 .schedule-card:nth-child(2)::before{background-image:url('../assets/img/clientes-para-siempre-cover.webp')}
 .schedule-card:nth-child(3)::before{background-image:url('../assets/img/cafeteria-perfecta-cover.webp')}
-.schedule-card:nth-child(4)::before{background-image:url('../assets/img/liderazgo-gastronomico-cover.webp')}
+.schedule-card:nth-child(4)::before{background-image:url('../assets/img/mision-posible-cover.webp')}
 .schedule-card:nth-child(5)::before{background-image:url('../assets/img/mesero-5-estrellas-cover.webp')}
 @media(max-width:1100px){
   .calendar-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}

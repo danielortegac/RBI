@@ -40,9 +40,9 @@ function buildChatbot(){
   }
   function start(){
     body.innerHTML='';
-    bot('Hola, soy el asesor digital de RBI. Te puedo guiar hacia el curso correcto según tu objetivo: vender más, ordenar tu restaurante, capacitar meseros, abrir cafetería, liderar equipo o crear clientes fieles.');
+    bot('Hola, soy el asesor digital de RBI. Te puedo guiar hacia el curso correcto según tu objetivo: vender más, ordenar tu restaurante, capacitar meseros, abrir cafetería, fortalecer el liderazgo con MISIÓN POSIBLE o crear clientes fieles.');
     buttons();
-    const form=document.createElement('div'); form.className='bot-input'; form.innerHTML='<input id="botText" placeholder="Escribe: ventas, barismo, meseros, liderazgo..."><button>Enviar</button>'; body.appendChild(form);
+    const form=document.createElement('div'); form.className='bot-input'; form.innerHTML='<input id="botText" placeholder="Escribe: ventas, barismo, meseros, MISIÓN POSIBLE, liderazgo..."><button>Enviar</button>'; body.appendChild(form);
     form.querySelector('button').onclick=()=>handle(form.querySelector('input').value);
     form.querySelector('input').addEventListener('keydown',e=>{if(e.key==='Enter')handle(e.target.value)});
   }
@@ -52,7 +52,7 @@ function buildChatbot(){
     let id='restaurante-rentable';
     if(/cafe|cafeter|barismo|barista|espresso|capuccino|latte/.test(t)) id='cafeteria-perfecta';
     else if(/mesero|servicio|emocion|cliente|atencion|ventas emocionales/.test(t)) id='mesero-5-estrellas';
-    else if(/lider|gerente|manager|jefe|supervisor|capitan|equipo/.test(t)) id='liderazgo-gastronomico';
+    else if(/mision|misión|posible|lider|gerente|manager|jefe|supervisor|capitan|equipo/.test(t)) id='mision-posible';
     else if(/fan|fidel|lealtad|recompra|regres|experiencia|recomend/.test(t)) id='clientes-para-siempre';
     else if(/rentab|productiv|sistema|organizar|ventas|dirigir|control|inventario/.test(t)) id='restaurante-rentable';
     showCourse(id);
