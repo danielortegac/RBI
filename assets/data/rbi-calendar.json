@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-12",
-  "source": "NUEVO CALENDARIO rbi.xlsx (corrección confirmada: martes 25 de agosto de 2026)",
+  "updated": "2026-09-19",
+  "source": "Calendario original RBI preservado + nuevas fechas confirmadas 26 y 27 de octubre de 2026",
   "events": [
     {
       "id": "restaurante-rentable-2026-07-27-01",
@@ -205,6 +205,57 @@
       "inversion": "$2,950 MXN",
       "descuento20": "$2,360 MXN",
       "descuento30": "$2,065 MXN"
+    },
+    {
+      "id": "restaurante-rentable-2026-10-26-13",
+      "curso": "Cómo dirigir y hacer rentable tu restaurante",
+      "fecha": "2026-10-26",
+      "hora": "8:00 am a 6:00 pm",
+      "ciudad": "CDMX",
+      "modalidad": "Presencial",
+      "estado": "Curso abierto",
+      "color": "red",
+      "linkWhatsapp": "https://wa.me/526141964438?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20C%C3%B3mo%20dirigir%20y%20hacer%20rentable%20tu%20restaurante%20de%20RBI%20para%20el%20lunes%2026%20de%20octubre%20de%202026.%20Quiero%20confirmar%20cupo%2C%20inversi%C3%B3n%20e%20inscripci%C3%B3n.",
+      "linkPago": "",
+      "visible": true,
+      "current": true,
+      "notas": "Operación, productividad, ventas, clientes y rentabilidad para restaurantes. · Inversión $2,950 MXN · 20% descuento $2,360 MXN · 30% 2+ participantes $2,065 MXN",
+      "inversion": "$2,950 MXN",
+      "descuento20": "$2,360 MXN",
+      "descuento30": "$2,065 MXN"
+    },
+    {
+      "id": "mesero-5-estrellas-2026-10-27-14",
+      "curso": "Mesero de 5 Estrellas",
+      "fecha": "2026-10-27",
+      "hora": "8:00 am a 1:00 pm",
+      "ciudad": "CDMX",
+      "modalidad": "Presencial",
+      "estado": "Curso abierto",
+      "color": "gold",
+      "linkWhatsapp": "https://wa.me/526141964438?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Mesero%20de%205%20Estrellas%20de%20RBI%20para%20el%20martes%2027%20de%20octubre%20de%202026%2C%20de%208%3A00%20am%20a%201%3A00%20pm.%20Quiero%20confirmar%20cupo%2C%20inversi%C3%B3n%20e%20inscripci%C3%B3n.",
+      "linkPago": "",
+      "visible": true,
+      "current": true,
+      "notas": "La magia de las emociones en las ventas y el servicio al cliente."
+    },
+    {
+      "id": "mision-posible-2026-10-27-15",
+      "curso": "MISIÓN POSIBLE",
+      "fecha": "2026-10-27",
+      "hora": "2:00 pm a 7:00 pm",
+      "ciudad": "CDMX",
+      "modalidad": "Presencial",
+      "estado": "Curso abierto",
+      "color": "purple",
+      "linkWhatsapp": "https://wa.me/526141964438?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MISI%C3%93N%20POSIBLE%20de%20RBI%20para%20el%20martes%2027%20de%20octubre%20de%202026%2C%20de%202%3A00%20pm%20a%207%3A00%20pm.%20Quiero%20confirmar%20cupo%2C%20inversi%C3%B3n%20e%20inscripci%C3%B3n.",
+      "linkPago": "",
+      "visible": true,
+      "current": true,
+      "notas": "Liderazgo operativo para managers, gerentes, capitanes, líderes, jefes y supervisores. · Inversión $1,750 MXN · 20% descuento $1,400 MXN · 30% 2+ participantes $1,225 MXN",
+      "inversion": "$1,750 MXN",
+      "descuento20": "$1,400 MXN",
+      "descuento30": "$1,225 MXN"
     }
   ]
 }
