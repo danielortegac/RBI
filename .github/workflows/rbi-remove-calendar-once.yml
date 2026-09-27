@@ -1,0 +1,36 @@
+name: RBI - ocultar calendario una sola vez
+
+on:
+  push:
+    branches:
+      - rbi-remove-calendar-20260927
+    paths:
+      - .github/workflows/rbi-remove-calendar-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  aplicar-cambio:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar rama
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Aplicar y verificar el cambio exacto
+        run: python scripts/rbi_remove_calendar_once.py
+
+      - name: Confirmar únicamente los archivos autorizados
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --name-only
+          test "$(git diff --cached --name-only | wc -l)" -eq 11
+          git commit -m "Ocultar calendario público sin modificar otros recursos"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
