@@ -1,0 +1,16 @@
+/* RBI · Corrección mínima de cabecera y badge, 17oct2026. */
+.site-header .nav-shell{margin-inline:auto!important}
+.site-header .brand{display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;gap:0!important;width:220px!important;max-width:220px!important;min-width:0!important;min-height:73px!important;height:auto!important;padding:7px 10px!important;background:#fff!important;border-radius:8px!important;overflow:hidden!important}
+.site-header .brand-mark{display:none!important}
+.site-header .brand img{display:block!important;position:static!important;width:100%!important;max-width:200px!important;height:auto!important;max-height:none!important;object-fit:contain!important;filter:none!important;transform:none!important;margin:0!important}
+.hero .hero-visual>.bubble.b3{position:relative!important;display:inline-flex!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:14px 0 0 22px!important;align-items:center!important;animation:none!important;transform:none!important;max-width:calc(100% - 44px)!important}
+@media(min-width:921px){.site-header .nav-shell{width:min(1380px,100%)!important;max-width:1380px!important;gap:18px!important}.site-header .main-nav{min-width:0!important;flex:1 1 auto!important;flex-wrap:wrap!important;row-gap:4px!important;justify-content:flex-end!important}}
+@media(max-width:920px){.site-header .brand{width:190px!important;max-width:100%!important;min-height:63px!important;padding:6px 8px!important}.site-header .brand img{width:100%!important;max-width:174px!important}}
+@media(max-width:620px){.site-header .brand{width:170px!important;min-height:57px!important;padding:6px 8px!important}.site-header .brand img{max-width:154px!important}.hero .hero-visual>.bubble.b3{display:none!important}}
+.rbi-next-course{padding:30px 0;background:#17171b;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)}
+.rbi-next-course .container{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.rbi-next-course .eyebrow{margin-bottom:12px;color:#ffce33}
+.rbi-next-course h2{font-size:clamp(25px,3vw,34px);line-height:1.13;margin:0 0 12px;max-width:760px}
+.rbi-next-course p{font-size:14px;line-height:1.6;color:#d2cec4;margin:0;max-width:780px}
+.rbi-next-course .btn{flex-shrink:0;box-shadow:none;background:#ffce33;color:#161616;border-color:#ffce33}
+@media(max-width:720px){.rbi-next-course .container{display:block}.rbi-next-course .btn{margin-top:22px}.rbi-next-course p{font-size:14px}}

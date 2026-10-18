@@ -1,0 +1,56 @@
+RBI · CONTROL PARA RESTAURANTES
+
+PARA QUÉ SIRVE
+Plantilla de captura manual para revisar cierres diarios, insumos prioritarios, costeo de una receta de platillo y una de bebida, y una planeación mensual de equilibrio. Trabaja con un local y un catálogo por archivo. Los datos precargados son ejemplos didácticos, no resultados reales.
+
+PRIMER USO
+1. Guarda una copia con el nombre del negocio y el ciclo de trabajo. Conserva el archivo de ejemplo para consultar el formato.
+2. Edita solo las celdas con FONDO AMARILLO y TEXTO AZUL. Son dos señales de las mismas zonas de captura; no son dos tipos de celdas diferentes. Las demás celdas contienen cálculos, títulos o instrucciones.
+3. Sustituye los ejemplos por tus datos. Para quitar un ejemplo usa “Borrar contenido” únicamente sobre sus celdas de captura. No elimines filas, columnas, tablas, validaciones ni fórmulas. En Movimientos conserva las columnas calculadas Unidad base, Importe de compra y Revisión.
+4. En Inventario registra códigos únicos, unidad base, existencia inicial contada, mínimo, objetivo y costo de referencia. Si empiezas con una existencia inicial nueva, quita los movimientos de ejemplo para no volver a sumarlos.
+5. Registra tus entradas, salidas y mermas en Movimientos. Al cerrar el día, consolida los turnos en una sola fila de Ventas por fecha.
+6. Define Desde y Hasta en Ventas. Revisa las alertas antes de interpretar Resumen. Un registro incompleto, incluso fuera de las fechas seleccionadas, puede dejar el resultado en “Revisar datos”.
+
+CIERRES DIARIOS
+Una fila representa el total de un día, no una mesa ni un turno. Si tienes dos turnos, suma sus ventas netas, tickets/cuentas, comensales y costos variables antes de capturarlos. No promedies los tickets promedio de los turnos: el libro divide las ventas totales entre las cuentas totales.
+Captura fechas sin hora. Ventas y precios de venta se ingresan sin IVA ni propinas y después de descuentos. El archivo no separa ni calcula impuestos; usa una base de costos coherente para tu análisis.
+El costo variable del cierre se captura por separado: no se obtiene automáticamente de las compras, el inventario o las recetas.
+
+UNIDADES Y MERMAS
+Mantén una unidad constante por código: kg, g, l, ml o pza. Si el código está en kg, medio kilogramo se registra como 0.5, no como 500. El costo de entrada también debe corresponder a esa unidad. El libro no convierte unidades de compra, cajas o paquetes.
+No cambies el código de un insumo que ya tenga movimientos; perderías su asociación con esos registros.
+Entrada suma; Salida y Merma restan. Todas las cantidades se capturan positivas. El costo unitario se llena solo en Entrada.
+Ejemplo: si del mismo kilogramo se consumen 0.8 kg y se pierden 0.2 kg, registra Salida 0.8 y Merma 0.2. No registres además Salida 1, porque descontarías la pérdida dos veces. Separa consumos y pérdidas reales con un criterio consistente.
+Un saldo negativo exige revisar conteo, unidad, código y movimientos. Corrige el registro de origen; no alteres la existencia inicial para ocultar la diferencia.
+
+QUÉ CAMBIA CON EL PERIODO
+Desde y Hasta filtran Ventas. Inventario acumula la existencia inicial y TODOS los movimientos guardados en el archivo; no muestra un inventario histórico a la fecha seleccionada en Ventas.
+El gráfico de ventas muestra los primeros siete días del periodo. El de valor compara los primeros ocho insumos. Las tarjetas usan todos los registros válidos del periodo o catálogo dentro de las filas reservadas.
+
+COSTOS Y REPOSICIÓN
+Platillo y Bebida tienen diez espacios de ingredientes cada uno. Cantidad comprada y cantidad en receta deben usar la misma unidad. El rendimiento útil incorpora el aprovechamiento de preparación en el costo; no genera una merma ni una salida de inventario.
+Las recetas y el catálogo de inventario no comparten precios automáticamente. Actualiza sus entradas cuando cambien tus compras. El margen sobre ingredientes y la contribución no son utilidad neta ni flujo de caja.
+El valor estimado de Inventario usa el costo de referencia que capturaste, no promedio ponderado ni PEPS. Las compras no cambian ese costo automáticamente.
+Reponer indica que la existencia llegó al mínimo. Comprar sugiere la cantidad para volver al objetivo; revisa presentación del proveedor, disponibilidad y necesidades reales antes de ordenar. No se genera una compra.
+En Equilibrio usa costos fijos mensuales, proporción variable de toda la mezcla del negocio, ticket neto y días de operación del mismo mes. No uses el margen de un solo platillo como porcentaje variable de todo el restaurante.
+
+CAPACIDAD Y NUEVO CICLO
+Cada archivo reserva 62 cierres diarios, 30 insumos y 150 movimientos. Antes de exceder esos límites, archiva el archivo y prepara una copia para el nuevo ciclo. Las filas adicionales no están incluidas automáticamente en cálculos y gráficos.
+Para continuar el inventario: verifica la existencia de cierre con un conteo físico, traslada esa existencia a Inicial en la copia nueva y registra solo los movimientos posteriores al corte. No vuelvas a copiar los movimientos históricos, porque duplicarías su efecto. Conserva la copia anterior para revisar diferencias.
+Para varias recetas conserva copias identificadas por receta; el archivo incluye una hoja de platillo y una de bebida, no un catálogo ilimitado de menú.
+
+OCHO HOJAS
+Resumen: indicadores, gráficos y alertas.
+Ventas: cierres diarios, ticket ponderado, venta por comensal y contribución.
+Inventario: insumos, existencia, mínimos, objetivos y reposición sugerida.
+Movimientos: entradas, salidas y mermas capturadas por el usuario.
+Platillo y Bebida: costeo independiente por receta y porción.
+Equilibrio: planeación mensual con los datos que ingreses.
+Ayuda: navegación e instrucciones del archivo.
+
+ALCANCE
+Importes en MXN. Sin macros ni conexión con caja, bancos o sistemas fiscales. No descuenta insumos desde ventas o recetas y no controla lotes, caducidades ni producción. Es una herramienta inicial de trabajo manual, que debe adaptarse a las funciones y datos del negocio.
+
+RBI · Herramientas con Alonso Méndez
+https://rbi-restaurantsbusinessinstitute.com.mx/
+https://wa.me/526141964438
